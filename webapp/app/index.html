@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="../components/stall-indicator/stall-indicator.html">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato"/>
+  </head>
+
+  <style type="text/css">
+  	html, body {
+	   margin:0;
+	   padding:0;
+	   height:100%;
+	}
+	#south-bathroom {
+		float:left;
+		padding: 5%;
+		width:40%;
+		height: 75%;
+		overflow:hidden;
+	}
+	#north-bathroom {
+		float:left;
+		padding: 5%;
+		width:40%;
+		height: 75%;
+		overflow:hidden;
+	}
+	h1, h2, h3 {
+		font-family: Lato;
+		text-align:center;
+	}
+	stall-indicator {
+		float: left;
+		padding: 5%;
+		width: 15%;
+		height: 20%;
+		overflow: hidden;
+
+		font-family: Lato;
+		font-size: 18px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 500;
+		font-size: 1.2vw;
+		text-align:center;
+		text-decoration: none;
+		line-height: 100px;
+  		white-space: nowrap;
+	}
+	stall-indicator:hover {
+		cursor: default;
+	}
+  </style>
+
+  <body>
+  	<h1>poop-drive</h1>
+  	<h2>3rd Floor</h2>
+    <div id="south-bathroom">
+    	<h3>South Side</h3>
+		<stall-indicator stall-id="south-stall1"></stall-indicator>
+		<stall-indicator stall-id="south-stall2"></stall-indicator>
+		<stall-indicator stall-id="south-stall3"></stall-indicator>
+		<stall-indicator stall-id="south-stall4"></stall-indicator>
+	</div>
+
+	<div id="north-bathroom">
+		<h3>North Side</h3>
+		<stall-indicator stall-id="north-stall1"></stall-indicator>
+		<stall-indicator stall-id="north-stall2"></stall-indicator>
+		<stall-indicator stall-id="north-stall3"></stall-indicator>
+		<stall-indicator stall-id="north-stall4"></stall-indicator>
+	</div>
+  </body>
+</html>
